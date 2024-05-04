@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        background-image: url('https://source.unsplash.com/random');
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section h2 {
+        margin-bottom: 30px;
+    }
+
+    .portfolio-item {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer p {
+        margin: 0;
+        background-image: url('https://source.unsplash.com/random');
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+        header h1 {
+            font-size: 1.5em;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+ ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      margin-right: 10px; /* Add some space between items */
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>M.V.S.Bhavana Abhishikta</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm a passionate web developer with a strong foundation in HTML, CSS, and JavaScript, among other technologies. I thrive on crafting responsive and interactive websites that not only look great but also provide seamless user experiences.</p>
+
+  <p>Throughout my journey as a web developer, I've had the pleasure of working on various projects that showcase my skills and creativity.
+I'm constantly exploring new technologies and techniques to enhance my skills and deliver exceptional results. Whether it's a personal project or a collaborative endeavor, I approach each task with enthusiasm and dedication.</p>
+
+  <p>Feel free to explore my portfolio to learn more about my work and expertise. If you're interested in collaborating or have any inquiries, don't hesitate to reach out. Let's bring your ideas to life!</p>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+       <h4>Programming Languages:</h4>
+  <ul>
+    <li>Python</li>
+    <li>Java</li>
+    <li>R Programming</li>
+  </ul>
+
+  <h4>Web Development:</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+
+  <h4>Cybersecurity Tools:</h4>
+  <ul>
+    <li>Nmap</li>
+    <li>John the Ripper</li>
+    <li>Cisco Packet Tracer</li>
+    <li>Social Phish</li>
+  </ul>
+
+  <h4>Database Management:</h4>
+  <ul>
+    <li>MySQL</li>
+  </ul>
+    </div>
+</section>
+<section id="portfolio" class="section">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <div id="portfolioItems" class="portfolio-items">
+            <!-- Portfolio items will be dynamically added here --> Temperature Converter
+Landing Page
+Online Registration Page
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+		<input type="text" name="id" placeholder="Your id" required>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="contact" placeholder="Your contact" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Bhavana. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Array of portfolio items
+    var portfolioItems = [
+        {
+            title: "Temperature Converter",
+            description: "A handy tool that allows users to convert temperatures between different units, providing a simple yet practical solution for everyday needs."
+        },
+        {
+            title: "Landing Page",
+            description: "I've designed and developed engaging landing pages that effectively capture attention and encourage user engagement. These pages are optimized for conversion and reflect my commitment to blending aesthetics with functionality."
+        },
+        {
+            title: "Online Registration Page",
+            description: "Building on my expertise, I've created intuitive online registration pages that streamline the user registration process. These pages prioritize user-friendly design and smooth navigation, ensuring a hassle-free experience for visitors."
+        },
+    ];
+
+    // Function to create portfolio items
+    function createPortfolioItems() {
+        var portfolioItemsContainer = document.getElementById("portfolioItems");
+        portfolioItems.forEach(function(item) {
+            var portfolioItem = document.createElement("div");
+            portfolioItem.classList.add("portfolio-item");
+            var title = document.createElement("h3");
+            title.textContent = item.title;
+            var description = document.createElement("p");
+            description.textContent = item.description;
+            portfolioItem.appendChild(title);
+            portfolioItem.appendChild(description);
+            portfolioItemsContainer.appendChild(portfolioItem);
+        });
+    }
+
+    // Call the function to create portfolio items
+    createPortfolioItems();
+</script>
+
+</body>
+</html>
