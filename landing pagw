@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            color: #000;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/random');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+        }
+        .content .box {
+            width: 30%;
+            padding: 20px;
+            background-color: #f1f1f1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content .box h2 {
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Landing Page</h1>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>>Welcome to our sleek landing page designed for a seamless user experience. Explore our products and services, and immerse yourself in a visually captivating interface that effortlessly guides you towards your interests.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <h2>About</h2>
+                <p>Welcome to our sleek landing page designed for a seamless user experience. Explore our products and services, and immerse yourself in a visually captivating interface that effortlessly guides you towards your interests.</p>
+            </div>
+            <div class="box">
+                <h2>Contact</h2>
+                <p> Contact us at.</p>
+            </div>
+            <div class="box">
+                <h2>Opportunities</h2>
+                <p>Discover a realm of possibilities on our opportunities page. Explore exciting career prospects, partnerships, and collaborative ventures that align with your aspirations. Uncover pathways to growth and success within our dynamic ecosystem.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Landing Page. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
